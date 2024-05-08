@@ -18,6 +18,7 @@ void swap(int *a, int *b)
 /**
  * partition - divides an array into parts
  * @array: array
+ * @size: size of the array
  * @low: lower part
  * @high: higher part
  *
@@ -53,6 +54,7 @@ int partition(int *array, size_t size, int low, int high)
  * quick_sort_helper - sorts the array's partitioned parts recursively
  * using quick sort method
  * @array: array
+ * @size: size of the array
  * @low: lower
  * @high: higher
  *
