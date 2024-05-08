@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * insertion_sort - sorts a double linked list using insertion sort
+ * insertion_sort_list - sorts a double linked list using insertion sort
  * @list: list to sort
  *
  * Return: nothing.
@@ -26,7 +26,7 @@ void insertion_sort_list(listint_t **list)
 			point->next = point->prev;
 			point->prev = point->next->prev;
 			point->next->prev = point;
-			
+
 			if (point->prev != NULL)
 				point->prev->next = point;
 			else
